@@ -10,9 +10,12 @@ html{
 }
 /* General size */
 body{
-    min-height: 100vh;
+    min-height: 120vh; /* exceeds 100vh to allow scrolling to demonstrate the nav is fixed */
     font-family:Consolas, Arial, sans-serif;
     font-size: 1.6em;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
 }
 
 /*nav*/
@@ -20,6 +23,7 @@ nav{
     width:90%;
     height:10rem;
     position:fixed;
+    z-index: 1;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -41,7 +45,7 @@ nav li{
 }
 
 nav a{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #ffffff;
     text-decoration:none;
     height:100%;
@@ -67,6 +71,10 @@ nav a:hover{
     font-size: 2rem;
 }
 
+.logo a:hover{
+    background-color: initial;
+}
+
 /* sidebar menu*/
 .sm-menu{
     position: fixed;
@@ -77,7 +85,7 @@ nav a:hover{
     align-items: start;
     top: 0;
     right: 0;
-    background-color: #dea9a9;
+    background-color: #5877fd;
     width: 40%;
 }
 
@@ -85,6 +93,21 @@ nav a:hover{
 .sm-menu a {
     width: 100%;
 }
+
+/* content area */
+#content{
+    margin-top:15rem;
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+}
+
+footer{
+    border-top: 1px solid rgb(88, 120, 255);
+    padding: 2rem;
+    margin-top: auto;
+}
+
 
 /* media queries*/
 @media screen and (min-width: 600px){
@@ -95,6 +118,4 @@ nav a:hover{
     .toggle-button{
         display: none;
     }
-
-
 }

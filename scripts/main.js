@@ -1,3 +1,8 @@
+// load home page
+window.addEventListener('load', () => {
+    window.location.hash = ('#home');
+})
+
 // GUI elements
 const smMenuSideBar = document.querySelector(".sm-menu");
 
