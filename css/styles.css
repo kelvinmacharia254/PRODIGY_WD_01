@@ -10,7 +10,7 @@ html{
 }
 /* General size */
 body{
-    min-height: 120vh; /* exceeds 100vh to allow scrolling to demonstrate the nav is fixed */
+    min-height: 105vh; /* exceeds 100vh to allow scrolling to demonstrate the nav is fixed */
     font-family:Consolas, Arial, sans-serif;
     font-size: 1.6em;
     line-height: 1.6;
@@ -101,7 +101,7 @@ nav a:hover{
 
 /* content area */
 #content{
-    margin-top:15rem;
+    margin-top:12rem;
     width: 80%;
     display:flex;
     flex-direction: column;
@@ -109,7 +109,7 @@ nav a:hover{
 
 footer{
     border-top: 1px solid rgb(88, 120, 255);
-    padding-top: 1rem;
+    padding:1rem 0 1rem 0;
     margin-top: auto;
 }
 
