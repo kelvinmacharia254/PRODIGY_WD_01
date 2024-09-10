@@ -44,6 +44,11 @@ nav li{
     height: 2.5em;
 }
 
+.sm-menu li:first-child{
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
 nav a{
     font-size: 2rem;
     color: #ffffff;

@@ -23,7 +23,7 @@ const routesContent ={
 // GUI elements
 const smMenuSideBar = document.querySelector(".sm-menu");
 const toggleButton = document.querySelector("#toggle-button");
-const closeSideBarButton = document.querySelector("#close-side-bar");
+const closeSideBarButtons = document.querySelectorAll(".close-side-bar");
 const content = document.querySelector("#main-content");
 
 // load homepage content on initial load
@@ -35,9 +35,9 @@ window.addEventListener('load', () => {
 // open sidebar nav menu
 toggleButton.addEventListener("click", () => smMenuSideBar.style.display = "flex");
 // close sider nav menu
-closeSideBarButton.addEventListener("click", () => smMenuSideBar.style.display = "none");
-
-
+closeSideBarButtons.forEach((button)=>
+    button.addEventListener("click", () => smMenuSideBar.style.display = "none")
+)
 // implement SPA functionality
 window.addEventListener('hashchange', () => {
     const currentHash = window.location.hash;
